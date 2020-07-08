@@ -1,0 +1,60 @@
+unit uFrmSaudeMental;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Imaging.jpeg,
+  Vcl.ExtCtrls, FireDAC.Stan.Intf, FireDAC.Stan.Param, FireDAC.Phys.Intf,
+  FireDAC.Comp.Client, FireDAC.Phys.PGDef, FireDAC.Stan.Option,
+  FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Stan.Def, FireDAC.Stan.Pool,
+  FireDAC.Stan.Async, FireDAC.Phys, FireDAC.VCLUI.Wait, FireDAC.DatS,
+  FireDAC.DApt.Intf, FireDAC.DApt, Data.DB, FireDAC.Comp.DataSet,
+  FireDAC.Phys.PG, Vcl.Grids, Vcl.DBGrids, unitlogin, Vcl.DBCtrls, Unittelageral;
+
+type
+  TProjetoSM = class(TForm)
+    PanelGeral: TPanel;
+    ImagemFundo: TImage;
+    LabelFraseMotivadora: TLabel;
+    EditFrase2: TEdit;
+    EditFrase1: TEdit;
+    EditFrase3: TEdit;
+    Frase1: TLabel;
+    Frase2: TLabel;
+    Frase3: TLabel;
+    LabelExplicação: TLabel;
+    BotãoEnvio: TButton;
+    FDPhysPgDriverLink1: TFDPhysPgDriverLink;
+    FDConnection1: TFDConnection;
+    FDQuery1: TFDQuery;
+    DataSource1: TDataSource;
+    DBGrid1: TDBGrid;
+    voltar: TButton;
+    DBText1: TDBText;
+    procedure BotãoEnvioClick(Sender: TObject);
+    procedure voltarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  ProjetoSM: TProjetoSM;
+
+implementation
+
+{$R *.dfm}
+
+procedure TProjetoSM.BotãoEnvioClick(Sender: TObject);
+begin
+fdquery1.Open('select * from frases');
+end;
+
+procedure TProjetoSM.voltarClick(Sender: TObject);
+begin
+telageral.showmodal
+end;
+
+end.

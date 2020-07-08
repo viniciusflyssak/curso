@@ -1,0 +1,63 @@
+unit IMC;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls,
+  uFrmRequisitos, uFrmResultados, uPessoa, uCalculadora, uResultados;
+
+type
+  TFimc = class(TForm)
+    Pfundo: TPanel;
+    EDTaltura: TEdit;
+    EDTpeso: TEdit;
+    Taltura: TStaticText;
+    Tpeso: TStaticText;
+    CBsexo: TComboBox;
+    Tsexo: TStaticText;
+    Pcalculadora: TPanel;
+    Brequisitos: TButton;
+    Bcalcular: TButton;
+    procedure BrequisitosClick(Sender: TObject);
+    procedure BcalcularClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Fimc: TFimc;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFimc.BcalcularClick(Sender: TObject);
+
+var
+  calcular: Tcalculadora;
+  pessoa: Tpessoa;
+  recorde: Rresultado;
+begin
+  pessoa := Tpessoa.Create;
+  pessoa.altura := Strtofloat(EDTaltura.Text);
+  pessoa.peso := Strtofloat(EDTpeso.Text);
+  pessoa.sexo := CBsexo.Text[0];
+
+  calcular := Tcalculadora.Create;
+  recorde := calcular.calcularimc(pessoa);
+  uFrmResultados := TFresultado.Create(self, pessoa, recorde);
+  Fresultado.showmodal;
+except
+  raise Exception.Create('Não foi possível calcular!');
+end;
+
+procedure TFimc.BrequisitosClick(Sender: TObject);
+begin
+  Frequisitos.showmodal
+end;
+
+end.

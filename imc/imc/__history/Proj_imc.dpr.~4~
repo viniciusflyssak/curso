@@ -1,0 +1,16 @@
+program Proj_imc;
+
+uses
+  Vcl.Forms,
+  IMC in '..\IMC.pas' {Fimc},
+  uPessoa in 'uPessoa.pas',
+  uResultados in 'uResultados.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFimc, Fimc);
+  Application.Run;
+end.

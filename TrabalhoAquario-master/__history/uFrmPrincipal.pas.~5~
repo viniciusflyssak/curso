@@ -1,0 +1,37 @@
+unit uFrmPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Imaging.jpeg,
+  Vcl.StdCtrls, uFrmAtracao;
+
+type
+  TFrmMenu = class(TForm)
+    PanelLogo: TPanel;
+    ImgFundo: TImage;
+    Btningresso: TButton;
+    BtnAtracoes: TButton;
+    procedure BtnAtracoesClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmMenu: TFrmMenu;
+
+implementation
+
+{$R *.dfm}
+
+
+
+procedure TFrmMenu.BtnAtracoesClick(Sender: TObject);
+begin
+ FrmAtracoes.Showmodal;
+end;
+
+end.

@@ -1,0 +1,57 @@
+object DM: TDM
+  OldCreateOrder = False
+  OnCreate = DataModuleCreate
+  Height = 269
+  Width = 587
+  object DevmediaConnection: TFDConnection
+    Params.Strings = (
+      'ConnectionDef=DevMedia')
+    LoginPrompt = False
+    Left = 86
+    Top = 37
+  end
+  object ClienteTable: TFDQuery
+    Connection = DevmediaConnection
+    FormatOptions.AssignedValues = [fvFmtDisplayNumeric, fvFmtEditNumeric]
+    FormatOptions.FmtDisplayNumeric = '0000'
+    FormatOptions.FmtEditNumeric = '0000'
+    UpdateOptions.AssignedValues = [uvGeneratorName]
+    UpdateOptions.GeneratorName = 'GEN_CLIENTE'
+    UpdateOptions.AutoIncFields = 'ID_CLIENTE'
+    SQL.Strings = (
+      'SELECT * FROM CLIENTE')
+    Left = 277
+    Top = 94
+    object ClienteTableID_CLIENTE: TFDAutoIncField
+      FieldName = 'ID_CLIENTE'
+      Origin = 'ID_CLIENTE'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      DisplayFormat = '0000'
+      EditFormat = '0000'
+      IdentityInsert = True
+    end
+    object ClienteTableCODIGO: TIntegerField
+      FieldName = 'CODIGO'
+      Origin = 'CODIGO'
+      Required = True
+      DisplayFormat = '0000'
+      EditFormat = '0000'
+    end
+    object ClienteTableNOME: TStringField
+      FieldName = 'NOME'
+      Origin = 'NOME'
+      Size = 60
+    end
+    object ClienteTableIDADE: TSmallintField
+      FieldName = 'IDADE'
+      Origin = 'IDADE'
+      DisplayFormat = '0000'
+      EditFormat = '0000'
+    end
+    object ClienteTableDATA_CADASTRO: TDateField
+      DefaultExpression = 'NOW()'
+      FieldName = 'DATA_CADASTRO'
+      Origin = 'DATA_CADASTRO'
+    end
+  end
+end

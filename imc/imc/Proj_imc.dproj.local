@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/05/25 13:15:38.000.721,=C:\Users\vinicius\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/05/25 13:36:25.000.666,=C:\Users\vinicius\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/05/25 14:14:02.000.478,C:\Users\vinicius\Desktop\Curso\IMC.dfm=C:\Users\vinicius\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2020/05/25 14:14:02.000.478,C:\Users\vinicius\Desktop\Curso\IMC.pas=C:\Users\vinicius\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/05/25 14:15:39.000.187,C:\Users\vinicius\Desktop\Curso\imc\Proj_imc.dproj=C:\Users\vinicius\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2020/05/25 14:26:31.000.809,=C:\Users\vinicius\Desktop\Curso\imc\Unit1.pas</Transaction>
+    <Transaction>2020/05/25 14:27:16.000.616,C:\Users\vinicius\Desktop\Curso\imc\uPessoa.pas=C:\Users\vinicius\Desktop\Curso\imc\Unit1.pas</Transaction>
+    <Transaction>2020/05/25 15:26:15.000.662,=C:\Users\vinicius\Desktop\Curso\imc\Unit1.pas</Transaction>
+    <Transaction>2020/05/25 15:26:28.000.673,C:\Users\vinicius\Desktop\Curso\imc\uResultados.pas=C:\Users\vinicius\Desktop\Curso\imc\Unit1.pas</Transaction>
+    <Transaction>2020/05/25 15:34:56.000.637,=C:\Users\vinicius\Desktop\Curso\imc\Unit1.pas</Transaction>
+    <Transaction>2020/05/25 15:35:11.000.940,C:\Users\vinicius\Desktop\Curso\imc\uCalculadora.pas=C:\Users\vinicius\Desktop\Curso\imc\Unit1.pas</Transaction>
+    <Transaction>2020/05/26 14:47:45.000.424,=C:\Users\vinicius\Desktop\Curso\imc\Unit1.pas</Transaction>
+    <Transaction>2020/05/26 14:53:38.000.461,C:\Users\vinicius\Desktop\Curso\imc\Unit1.dfm=C:\Users\vinicius\Desktop\Curso\imc\uFrmRequisitos.dfm</Transaction>
+    <Transaction>2020/05/26 14:53:38.000.461,C:\Users\vinicius\Desktop\Curso\imc\Unit1.pas=C:\Users\vinicius\Desktop\Curso\imc\uFrmRequisitos.pas</Transaction>
+    <Transaction>2020/05/26 15:07:55.000.177,=C:\Users\vinicius\Desktop\Curso\imc\Unit1.pas</Transaction>
+    <Transaction>2020/05/26 15:08:59.000.098,C:\Users\vinicius\Desktop\Curso\imc\Unit1.pas=C:\Users\vinicius\Desktop\Curso\imc\uFrmResultados.pas</Transaction>
+    <Transaction>2020/05/26 15:08:59.000.098,C:\Users\vinicius\Desktop\Curso\imc\Unit1.dfm=C:\Users\vinicius\Desktop\Curso\imc\uFrmResultados.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

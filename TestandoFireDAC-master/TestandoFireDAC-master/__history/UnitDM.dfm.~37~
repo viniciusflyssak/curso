@@ -1,0 +1,19 @@
+object DM: TDM
+  OldCreateOrder = False
+  OnCreate = DataModuleCreate
+  Height = 269
+  Width = 587
+  object FDQuery1: TFDQuery
+    Left = 504
+    Top = 16
+  end
+  object FDConnection1: TFDConnection
+    Left = 408
+    Top = 16
+  end
+  object FDPhysPgDriverLink1: TFDPhysPgDriverLink
+    OnDriverCreated = FDPhysPgDriverLink1DriverCreated
+    Left = 464
+    Top = 56
+  end
+end

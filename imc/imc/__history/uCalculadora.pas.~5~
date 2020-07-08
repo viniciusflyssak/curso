@@ -1,0 +1,23 @@
+unit uCalculadora;
+
+interface
+
+uses uPessoa, uResultados;
+
+type
+  calculadora = class
+    pessoa: Tpessoa;
+    function CalcularIMC(pessoa: Tpessoa): Rresultado;
+
+  end;
+
+implementation
+
+{ calculadora }
+
+function calculadora.CalcularIMC(pessoa: Tpessoa): Rresultado;
+begin
+  pessoa.peso / (pessoa.altura * pessoa.altura)
+end;
+
+end.

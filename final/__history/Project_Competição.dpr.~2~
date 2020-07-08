@@ -1,0 +1,16 @@
+program Project_Competição;
+
+uses
+  Vcl.Forms,
+  uFrmSaudeMental in '..\..\Área de Trabalho\uFrmSaudeMental.pas' {ProjetoSM},
+  UnitLogin in '..\..\Área de Trabalho\UnitLogin.pas' {Login};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TProjetoSM, ProjetoSM);
+  Application.CreateForm(TLogin, Login);
+  Application.Run;
+end.

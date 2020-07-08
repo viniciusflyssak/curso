@@ -1,0 +1,41 @@
+unit UnitLogin;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Imaging.jpeg,
+  Vcl.ExtCtrls, Unittelageral;
+
+type
+  TLogin = class(TForm)
+    Panel1: TPanel;
+    ImageFundo: TImage;
+    EditNome: TEdit;
+    EditSenha: TEdit;
+    LabelSenha: TLabel;
+    LabelNome: TLabel;
+    LabelTitulo: TLabel;
+    ButtonLogar: TButton;
+    LabelLogin: TLabel;
+    procedure ButtonLogarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Login: TLogin;
+
+implementation
+
+{$R *.dfm}
+
+
+procedure TLogin.ButtonLogarClick(Sender: TObject);
+begin
+telageral.showmodal
+end;
+
+end.

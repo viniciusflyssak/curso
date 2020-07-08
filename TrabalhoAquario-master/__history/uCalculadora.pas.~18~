@@ -1,0 +1,54 @@
+unit uCalculadora;
+
+interface
+
+uses uIngressos, uResultado, system.SysUtils;
+
+type
+  TCalculadora = class
+
+  public
+    function Calcular(Ingresso: Tingresso): Rvalor;
+
+  end;
+  { TCalculadora }
+
+implementation
+
+{ TCalculadora }
+
+function TCalculadora.Calcular(Ingresso: Tingresso): Rvalor;
+var
+  resultado: real;
+  quantidade: real;
+
+begin
+quantidade := ingresso.Quantidade;
+if ingresso.atracao = 'Pacote premium'then
+ begin
+  resultado := quantidade * 450.9;
+   result.valor := resultado;
+ end;
+ if ingresso.Atracao = 'Pacote família' then;
+ begin
+  resultado := quantidade * 300.5;
+   result.valor := resultado;
+ end;
+ if ingresso.Atracao = 'Pacote intermediário' then;
+ begin
+  resultado := quantidade * 245.8;
+   result.valor := resultado;
+ end;
+ if ingresso.Atracao = 'Pacote iniciante' then;
+ begin
+  resultado := quantidade * 150.1;
+   result.valor := resultado;
+ end;
+  if ingresso.Atracao = 'Mergulho livre' then;
+ begin
+  resultado := quantidade * 290.9;
+   result.valor := resultado;
+ end;
+end;
+
+end.

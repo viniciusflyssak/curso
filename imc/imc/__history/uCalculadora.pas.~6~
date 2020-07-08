@@ -1,0 +1,50 @@
+unit uCalculadora;
+
+interface
+
+uses uPessoa, uResultados;
+
+type
+  calculadora = class
+    pessoa: Tpessoa;
+    resimc: Rresultado;
+    function CalcularIMC(pessoa: Tpessoa): Rresultado;
+
+  end;
+
+implementation
+
+{ calculadora }
+
+function calculadora.CalcularIMC(pessoa: Tpessoa): Rresultado;
+VAR
+  total: real;
+begin
+  total := pessoa.peso / (pessoa.altura * pessoa.altura);
+  resimc.valor := total;
+  if pessoa.sexo = 'Feminino' then
+    if total > 19.1 then
+      resimc.descricao = 'Abaixo do peso!'
+    else if (total > 19.1) and (total <= 25.8) then
+      resimc.descricao = 'Peso normal'
+    else if (total > 25.8) and (total <= 27.3) then
+      resimc.descricao = 'Marginalmente acima do peso'
+    else if (total > 27.3) and (total <= 32.3) then
+      resimc.descricao = 'Acima do peso'
+    else
+      resimc.descricao = 'obeso';
+  if pessoa.sexo = 'Masculino' then
+    if total > 19.1 then
+      resimc.descricao = 'Abaixo do peso!'
+    else if (total > 19.1) and (total <= 25.8) then
+      resimc.descricao = 'Peso normal'
+    else if (total > 25.8) and (total <= 27.3) then
+      resimc.descricao = 'Marginalmente acima do peso'
+    else if (total > 27.3) and (total <= 32.3) then
+      resimc.descricao = 'Acima do peso'
+    else
+      resimc.descricao = 'obeso'
+
+end;
+
+end.

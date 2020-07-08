@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/02/07 17:03:48.000.716,=C:\Users\wyama\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/04/24 09:28:00.000.685,=C:\Users\wyama\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/05/25 15:08:58.000.624,=C:\Users\wyama\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/06/01 15:07:59.000.772,=C:\Users\wyama\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/06/21 14:24:13.000.519,=C:\Users\wyama\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/06/22 08:24:54.000.058,=C:\Users\wyama\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/07/07 08:21:41.000.680,=C:\Users\wyama\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/07/11 08:28:13.000.042,=C:\Users\wyama\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/08/11 11:33:55.000.039,=C:\Users\wyama\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/08/28 07:28:33.000.707,=C:\Users\wyama\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/08/28 07:29:01.000.381,C:\Users\wyama\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj=D:\DevMedia\Cursos_Gravação\Gravações\Curso\TryExcept\Tratamento_Erros.dproj</Transaction>
+    <Transaction>2017/08/28 07:29:14.000.187,=D:\DevMedia\Cursos_Gravação\Gravações\Curso\TryExcept\uVendaItem.pas</Transaction>
+    <Transaction>2017/08/28 07:29:14.000.163,=D:\DevMedia\Cursos_Gravação\Gravações\Curso\TryExcept\uVenda.pas</Transaction>
+    <Transaction>2017/08/28 07:29:18.000.549,=D:\DevMedia\Cursos_Gravação\Gravações\Curso\TryExcept\uFrmLembrete.pas</Transaction>
+    <Transaction>2017/08/28 07:29:29.000.427,D:\DevMedia\Cursos_Gravação\Gravações\Curso\TryExcept\uFrmLembrete.pas=D:\DevMedia\Cursos_Gravação\Gravações\Curso\TryExcept\uFrmVenda.pas</Transaction>
+    <Transaction>2017/08/28 07:29:29.000.427,D:\DevMedia\Cursos_Gravação\Gravações\Curso\TryExcept\uFrmLembrete.dfm=D:\DevMedia\Cursos_Gravação\Gravações\Curso\TryExcept\uFrmVenda.dfm</Transaction>
+    <Transaction>2017/08/28 07:44:18.000.473,=D:\DevMedia\Cursos_Gravação\Gravações\Curso\TryExcept\Unit1.pas</Transaction>
+    <Transaction>2017/08/28 07:50:28.000.787,D:\DevMedia\Cursos_Gravação\Gravações\Curso\TryExcept\Unit1.pas=D:\DevMedia\Cursos_Gravação\Gravações\Curso\TryExcept\uEVendaItem.pas</Transaction>
+    <Transaction>2017/08/28 09:55:05.000.828,D:\DevMedia\Cursos_Gravação\Gravações\Curso\TryExcept\uEVendaItem.pas=D:\DevMedia\Cursos_Gravação\Gravações\Curso\TryExcept\uEVendaInvalida.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="uEVendaInvalida.pas"/>
+    <File Path="uFrmVenda.pas"/>
+    <File Path="uFrmVenda.dfm"/>
+    <File Path="uVenda.pas"/>
+    <File Path="uVendaItem.pas"/>
+  </ProjectSortOrder>
+</BorlandProject>

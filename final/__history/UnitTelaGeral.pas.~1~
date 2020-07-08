@@ -1,0 +1,46 @@
+unit UnitTelaGeral;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Imaging.pngimage, Vcl.StdCtrls,
+  Vcl.Imaging.jpeg, Vcl.ExtCtrls, unitvideos, unitbilbiotecavirtual;
+
+type
+  Ttelageral = class(TForm)
+    Panel1: TPanel;
+    ImageFundo: TImage;
+    LabelTitulo: TLabel;
+    ButtonLivros: TButton;
+    IconeLivros: TImage;
+    IconeVideos: TImage;
+    IconeFrases: TImage;
+    BotãoVideos: TButton;
+    ButtonFrases: TButton;
+    procedure BotãoVideosClick(Sender: TObject);
+    procedure ButtonLivrosClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  telageral: Ttelageral;
+
+implementation
+
+{$R *.dfm}
+
+procedure Ttelageral.BotãoVideosClick(Sender: TObject);
+begin
+videos.showmodal
+end;
+
+procedure Ttelageral.ButtonLivrosClick(Sender: TObject);
+begin
+biblioteca.showmodal
+end;
+
+end.

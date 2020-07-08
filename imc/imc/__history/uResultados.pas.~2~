@@ -1,0 +1,9 @@
+unit uResultados;
+
+interface
+type
+Rresultado = record;
+end;
+implementation
+
+end.

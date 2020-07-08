@@ -1,0 +1,22 @@
+program AquarioRecantoFeliz;
+
+uses
+  Vcl.Forms,
+  uFrmPrincipal in 'uFrmPrincipal.pas' {FrmMenu},
+  uFrmAtracao in 'uFrmAtracao.pas' {FrmAtracoes},
+  uFrmCompraIngresso in 'uFrmCompraIngresso.pas' {FrmCompraIngresso},
+  uFrmIngresso in 'uFrmIngresso.pas' {FrmIngresso},
+  uIngressos in 'uIngressos.pas',
+  uResultado in 'uResultado.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  AApplication.CreateForm(TFrmMenu, FrmMenu);
+  AApplication.CreateForm(TFrmAtracoes, FrmAtracoes);
+  Application.CreateForm(TFrmIngresso, FrmIngresso);
+  Application.CreateForm(TFrmCompraIngresso, FrmCompraIngresso);
+  plication.Run;
+end.

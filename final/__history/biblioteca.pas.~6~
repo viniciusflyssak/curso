@@ -1,0 +1,82 @@
+unit biblioteca;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Imaging.pngimage,
+  Vcl.ExtCtrls, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param,
+  FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
+  FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Phys.PGDef, FireDAC.UI.Intf,
+  FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Phys, FireDAC.Phys.PG,
+  FireDAC.VCLUI.Wait, Data.DB, Vcl.DBCtrls, FireDAC.Comp.Client,
+  FireDAC.Comp.DataSet;
+
+type
+  Tfbiblioteca = class(TForm)
+    PanelGeral: TPanel;
+    ImageFundo: TImage;
+    LabelTitulo: TLabel;
+    FDQuery1: TFDQuery;
+    FDPhysPgDriverLink1: TFDPhysPgDriverLink;
+    FDConnection1: TFDConnection;
+    livro1: TLabel;
+    livro2: TLabel;
+    livro3: TLabel;
+    livro4: TLabel;
+    livro5: TLabel;
+    DBText1: TDBText;
+    DataSource1: TDataSource;
+    Button1: TButton;
+    FDQuery2: TFDQuery;
+    DataSource2: TDataSource;
+    DBText2: TDBText;
+    link1: TLabel;
+    link2: TLabel;
+    link3: TLabel;
+    link4: TLabel;
+    link5: TLabel;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  fbiblioteca: Tfbiblioteca;
+
+implementation
+
+{$R *.dfm}
+
+procedure Tfbiblioteca.Button1Click(Sender: TObject);
+begin
+fdquery1.Open('select link_livro from livroslinks where id_livroslinks = 1');
+link1.Caption := dbtext2.Caption;
+fdquery1.Open('select link_livro from livroslinks where id_livroslinks = 2');
+link2.Caption := dbtext2.Caption;
+fdquery1.Open('select link_livro from livroslinks where id_livroslinks = 3');
+link3.Caption := dbtext2.Caption;
+fdquery1.Open('select link_livro from livroslinks where id_livroslinks = 4');
+link4.Caption := dbtext2.Caption;
+fdquery1.Open('select link_livro from livroslinks where id_livroslinks = 5');
+link5.Caption := dbtext2.Caption;
+fdquery1.Open('select nome_livro from livroslinks where id_livroslinks = 1');
+livro1.Caption := dbtext1.Caption;
+livro1.Visible := true;
+fdquery1.Open('select nome_livro from livroslinks where id_livroslinks = 2');
+livro2.Caption := dbtext1.Caption;
+livro2.Visible := true;
+fdquery1.Open('select nome_livro from livroslinks where id_livroslinks = 3');
+livro3.Caption := dbtext1.Caption;
+livro3.Visible := true;
+fdquery1.Open('select nome_livro from livroslinks where id_livroslinks = 4');
+livro4.Caption := dbtext1.Caption;
+livro4.Visible := true;
+fdquery1.Open('select nome_livro from livroslinks where id_livroslinks = 5');
+livro5.Caption := dbtext1.Caption;
+livro5.Visible := true;
+end;
+
+end.

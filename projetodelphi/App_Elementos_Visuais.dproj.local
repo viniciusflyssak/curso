@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/04/02 15:47:09.000.708,=C:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/04/02 15:47:27.000.114,C:\Users\Vinicius\Desktop\projetodelphi\uFrmPrincipal.pas=C:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/04/02 15:47:27.000.114,C:\Users\Vinicius\Desktop\projetodelphi\uFrmPrincipal.dfm=C:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2020/04/02 15:48:44.000.936,C:\Users\Vinicius\Desktop\projetodelphi\App_Elementos_Visuais.dproj=C:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2020/04/03 14:21:30.000.687,C:\Users\Vinicius\Desktop\projetodelphi\uFrmPrincipal.pas=C:\Users\Vinicius\Desktop\Delphiprojeto\uFrmPrincipal.pas</Transaction>
+    <Transaction>2020/04/03 14:21:30.000.687,C:\Users\Vinicius\Desktop\projetodelphi\uFrmPrincipal.dfm=C:\Users\Vinicius\Desktop\Delphiprojeto\uFrmPrincipal.dfm</Transaction>
+    <Transaction>2020/04/06 14:46:01.000.676,=C:\Users\Vinicius\Desktop\projetodelphi\Unit1.pas</Transaction>
+    <Transaction>2020/04/06 14:46:15.000.703,=C:\Users\Vinicius\Desktop\projetodelphi\Unit2.pas</Transaction>
+    <Transaction>2020/04/06 14:48:45.000.219,C:\Users\Vinicius\Desktop\projetodelphi\Unit2.dfm=C:\Users\Vinicius\Desktop\projetodelphi\uFrmPrincipal2.dfm</Transaction>
+    <Transaction>2020/04/06 14:48:45.000.219,C:\Users\Vinicius\Desktop\projetodelphi\Unit2.pas=C:\Users\Vinicius\Desktop\projetodelphi\uFrmPrincipal2.pas</Transaction>
+  </Transactions>
+</BorlandProject>

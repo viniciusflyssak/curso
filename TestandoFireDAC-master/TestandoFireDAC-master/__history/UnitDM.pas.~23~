@@ -1,0 +1,68 @@
+unit UnitDM;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def,
+  FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.VCLUI.Wait,
+  FireDAC.Stan.Param, FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt, Data.DB,
+  FireDAC.Comp.DataSet, FireDAC.Comp.Client, FireDAC.Phys.FB, FireDAC.Phys.FBDef,
+  FireDAC.Phys.IBBase, Data.SqlExpr, FireDAC.Stan.ExprFuncs;
+
+type
+  TDM = class(TDataModule)
+    DvmConnection: TFDConnection;
+    ClienteTable: TFDQuery;
+    ProdutoTable: TFDQuery;
+    PedidoTable: TFDQuery;
+    ItemTable: TFDQuery;
+    ClienteTableID_CLIENTE: TFDAutoIncField;
+    ClienteTableCODIGO: TIntegerField;
+    ClienteTableNOME: TStringField;
+    ProdutoTableID_PRODUTO: TIntegerField;
+    ProdutoTableCODIGO: TStringField;
+    ProdutoTableDESCRICAO: TStringField;
+    ProdutoTableVALOR: TBCDField;
+    PedidoTableID_PEDIDO: TFDAutoIncField;
+    PedidoTableNUMERO: TIntegerField;
+    PedidoTableDATA: TDateField;
+    PedidoTableID_CLIENTE: TIntegerField;
+    PedidoTableNOME: TStringField;
+    DSPEDIDO: TDataSource;
+    ItemTableID_ITEM: TFDAutoIncField;
+    ItemTableORDEM: TIntegerField;
+    ItemTableID_PRODUTO: TIntegerField;
+    ItemTableQTD: TIntegerField;
+    ItemTableVLUN: TBCDField;
+    ItemTableID_PEDIDO: TIntegerField;
+    ItemTableDESCRICAO: TStringField;
+    procedure DataModuleCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DM: TDM;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+procedure TDM.DataModuleCreate(Sender: TObject);
+var
+  i: Integer;
+begin
+  DvmConnection.Open('DriverID=FB;local;DataBase=D:\DBFireDac\VENDAS.FDB','SYSDBA','masterkey');
+  ClienteTable.Open();
+  ProdutoTable.Open();
+  PedidoTable.Open();
+  ItemTable.Open();
+
+end;
+
+end.

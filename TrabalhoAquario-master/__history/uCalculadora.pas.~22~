@@ -1,0 +1,54 @@
+unit uCalculadora;
+
+interface
+
+uses uIngressos, uResultado, system.SysUtils;
+
+type
+  TCalculadora = class
+
+  public
+    function Calcular(Ingresso: Tingresso): Rvalor;
+
+  end;
+  { TCalculadora }
+
+implementation
+
+{ TCalculadora }
+
+function TCalculadora.Calcular(Ingresso: Tingresso): Rvalor;
+var
+  resultado: real;
+  quantidade: real;
+begin
+  try
+    quantidade := Ingresso.quantidade;
+    if Ingresso.atracao = 'Pacote premium' then
+    begin
+      resultado := quantidade * 450.9;
+    end;
+    if Ingresso.atracao = 'Pacote família' then;
+    begin
+      resultado := quantidade * 300.5;
+    end;
+    if Ingresso.atracao = 'Pacote intermediário' then;
+    begin
+      resultado := quantidade * 245.8;
+    end;
+    if Ingresso.atracao = 'Pacote iniciante' then;
+    begin
+      resultado := quantidade * 150.1;
+    end;
+    if Ingresso.atracao = 'Mergulho livre' then;
+    begin
+      resultado := quantidade * 290.9;
+    end;
+    result.valor := resultado;
+  except
+    raise Exception.Create('Não foi possível realizar a compra dos ingressos.');
+
+  end;
+end;
+
+end.

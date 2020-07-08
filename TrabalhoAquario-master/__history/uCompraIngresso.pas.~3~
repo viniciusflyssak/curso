@@ -1,0 +1,36 @@
+unit uCompraIngresso;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TFrmCompraIngresso = class(TForm)
+    PanelLogo: TPanel;
+    EdtNome: TEdit;
+    EdtIdade: TEdit;
+    EdtCpf: TEdit;
+    LbNome: TLabel;
+    LbIdade: TLabel;
+    LbCpf: TLabel;
+    CmbAtracao: TComboBox;
+    CmbQuantidade: TComboBox;
+    LbAtracao: TLabel;
+    LbQuantidade: TLabel;
+    BtComprar: TButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmCompraIngresso: TFrmCompraIngresso;
+
+implementation
+
+{$R *.dfm}
+
+end.

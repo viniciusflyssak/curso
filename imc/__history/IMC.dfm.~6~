@@ -1,0 +1,107 @@
+object Fimc: TFimc
+  Left = 0
+  Top = 0
+  Caption = 'IMC'
+  ClientHeight = 222
+  ClientWidth = 474
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Pfundo: TPanel
+    Left = 0
+    Top = 0
+    Width = 474
+    Height = 222
+    Align = alClient
+    TabOrder = 0
+    object EDTaltura: TEdit
+      Left = 24
+      Top = 72
+      Width = 121
+      Height = 21
+      TabOrder = 0
+    end
+    object EDpeso: TEdit
+      Left = 24
+      Top = 126
+      Width = 121
+      Height = 21
+      TabOrder = 1
+    end
+    object Taltura: TStaticText
+      Left = 24
+      Top = 49
+      Width = 57
+      Height = 17
+      Caption = 'Sua altura:'
+      TabOrder = 2
+    end
+    object Tpeso: TStaticText
+      Left = 26
+      Top = 103
+      Width = 55
+      Height = 17
+      Caption = 'Seu peso: '
+      TabOrder = 3
+    end
+    object CBsexo: TComboBox
+      Left = 24
+      Top = 184
+      Width = 145
+      Height = 21
+      TabOrder = 4
+      Items.Strings = (
+        'Feminino'
+        'Masculino'
+        'Outro')
+    end
+    object Tsexo: TStaticText
+      Left = 24
+      Top = 161
+      Width = 52
+      Height = 17
+      Caption = 'Seu sexo:'
+      TabOrder = 5
+    end
+    object Pcalculadora: TPanel
+      Left = 1
+      Top = 1
+      Width = 472
+      Height = 41
+      Align = alTop
+      Caption = 'Calculadora IMC'
+      Color = clHighlightText
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -21
+      Font.Name = 'Tempus Sans ITC'
+      Font.Style = [fsBold]
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 6
+    end
+    object Brequisitos: TButton
+      Left = 352
+      Top = 182
+      Width = 75
+      Height = 25
+      Caption = 'Ver requisitos'
+      TabOrder = 7
+      OnClick = BrequisitosClick
+    end
+    object Bcalcular: TButton
+      Left = 224
+      Top = 182
+      Width = 75
+      Height = 25
+      Caption = 'Calcular'
+      TabOrder = 8
+    end
+  end
+end

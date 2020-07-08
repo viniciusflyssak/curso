@@ -1,0 +1,151 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 300
+  ClientWidth = 512
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 32
+    Top = 107
+    Width = 44
+    Height = 18
+    Caption = 'Nome:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 32
+    Top = 155
+    Width = 43
+    Height = 18
+    Caption = 'Idade:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 32
+    Top = 203
+    Width = 30
+    Height = 18
+    Caption = 'CPF:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 344
+    Top = 96
+    Width = 50
+    Height = 18
+    Caption = 'Atra'#231#227'o'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 344
+    Top = 168
+    Width = 74
+    Height = 18
+    Caption = 'Quantidade'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 512
+    Height = 73
+    Align = alTop
+    Caption = 'Escolha seu Ingresso'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    ExplicitWidth = 635
+  end
+  object Edit1: TEdit
+    Left = 104
+    Top = 104
+    Width = 121
+    Height = 21
+    TabOrder = 1
+    Text = 'Edit1'
+  end
+  object Edit2: TEdit
+    Left = 104
+    Top = 152
+    Width = 121
+    Height = 21
+    TabOrder = 2
+    Text = 'Edit2'
+  end
+  object Edit3: TEdit
+    Left = 104
+    Top = 200
+    Width = 121
+    Height = 21
+    TabOrder = 3
+    Text = 'Edit3'
+  end
+  object ComboBox1: TComboBox
+    Left = 336
+    Top = 120
+    Width = 145
+    Height = 21
+    Style = csDropDownList
+    TabOrder = 4
+  end
+  object ComboBox2: TComboBox
+    Left = 336
+    Top = 192
+    Width = 145
+    Height = 21
+    Style = csDropDownList
+    TabOrder = 5
+  end
+  object Button1: TButton
+    Left = 216
+    Top = 248
+    Width = 129
+    Height = 44
+    Caption = 'Comprar'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 6
+  end
+end

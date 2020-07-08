@@ -1,0 +1,22 @@
+unit uPessoa;
+
+interface
+
+type
+
+  Tpessoa = class
+  private
+    Fpeso: real;
+    Faltura: real;
+    Fsexo: string;
+    procedure setAltura(const value: real);
+
+  public
+    property altura: real read Faltura write setAltura;
+    property peso: real read Fpeso write setPeso;
+    property sexo: real read Fsexo write setSexo;
+  end;
+
+implementation
+
+end.

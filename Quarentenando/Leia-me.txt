@@ -1,0 +1,3 @@
+Para que ocorra um funcionamento correto, deve-se copiar o arquivo "libpq.dll" para pasta 
+"system32" e "SysWOW64", ambas se encontram dentro da pasta "windows".
+Conexão com internet é requerida para utilização deste software.

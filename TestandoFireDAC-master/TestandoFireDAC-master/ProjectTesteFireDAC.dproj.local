@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/10/04 19:41:11.000.311,=C:\Users\helio\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2017/10/04 21:00:15.000.466,D:\MYs Atividades Profissionais\DevMedia\micro-curso\008 - O Que é FireDAC\02 - Pratica\Projeto\UnitPrincipal.dfm=C:\Users\helio\Documents\Embarcadero\Studio\Projects\Unit4.dfm</Transaction>
+    <Transaction>2017/10/04 21:00:15.000.466,D:\MYs Atividades Profissionais\DevMedia\micro-curso\008 - O Que é FireDAC\02 - Pratica\Projeto\UnitPrincipal.pas=C:\Users\helio\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2017/10/04 21:00:23.000.870,D:\MYs Atividades Profissionais\DevMedia\micro-curso\008 - O Que é FireDAC\02 - Pratica\Projeto\ProjectTesteFireDAC.dproj=C:\Users\helio\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+    <Transaction>2017/10/04 21:00:34.000.132,=D:\MYs Atividades Profissionais\DevMedia\micro-curso\008 - O Que é FireDAC\02 - Pratica\Projeto\Unit1.pas</Transaction>
+    <Transaction>2017/10/04 21:00:45.000.624,D:\MYs Atividades Profissionais\DevMedia\micro-curso\008 - O Que é FireDAC\02 - Pratica\Projeto\UnitDM.pas=D:\MYs Atividades Profissionais\DevMedia\micro-curso\008 - O Que é FireDAC\02 - Pratica\Projeto\Unit1.pas</Transaction>
+    <Transaction>2017/10/04 21:00:45.000.624,D:\MYs Atividades Profissionais\DevMedia\micro-curso\008 - O Que é FireDAC\02 - Pratica\Projeto\UnitDM.dfm=D:\MYs Atividades Profissionais\DevMedia\micro-curso\008 - O Que é FireDAC\02 - Pratica\Projeto\Unit1.dfm</Transaction>
+    <Transaction>2017/10/04 21:17:50.000.065,=D:\MYs Atividades Profissionais\DevMedia\micro-curso\008 - O Que é FireDAC\02 - Pratica\Projeto\ModelSupport_ProjectTesteFireDAC\default.txaPackage</Transaction>
+  </Transactions>
+</BorlandProject>
